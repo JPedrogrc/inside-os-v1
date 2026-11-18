@@ -13,7 +13,7 @@ func _process(delta: float) -> void :
 
 
 func _unhandled_input(event):
-	if event.is_action("ui_cancel"):
+	if event.is_action_pressed("ui_cancel"):
 		visible = true
 		get_tree().paused = true
 		resume_btn.grab_focus()
